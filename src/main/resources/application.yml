@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: techfx-spring-cloud-config-server
+    cloud:
+      server:
+        git:
+          uri:https://github.com/suchinth08/environment-variable-repo
+
+server:
+  port:${port:8888}
+
